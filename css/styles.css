@@ -143,3 +143,7 @@ hr {
   color: white;
   font-size: 1.2em;
 }
+
+.item::hover{
+	transition: 2sec;
+}
