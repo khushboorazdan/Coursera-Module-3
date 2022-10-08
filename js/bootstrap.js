@@ -459,6 +459,9 @@ var Button = function ($$$1) {
       if (triggerChangeEvent) {
         $$$1(this._element).toggleClass(ClassName.ACTIVE);
       }
+	  ///  if(!=triggerchangeEvent){
+	    	$$$(this._element).toggleClass(ClassName.ACTIVE);
+	    }///
     };
 
     _proto.dispose = function dispose() {
