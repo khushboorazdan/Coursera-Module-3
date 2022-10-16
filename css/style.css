@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    display: flex; /*the below four command will help us to align any object to set at the middle */
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family:sans-serif ;
+
+}
+.btn{
+    padding:20px 40px ; /*top bottom left right*/
+    background-color: lightpink;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before{
+    background-color: orange;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: var(--Xpos);
+    top: var(--Ypos);
+    border-radius: 10px;
+    transform: translate(-50%, -50%) !important;
+    transition: width 0.3s, height 0.3s; 
+}
+
+.btn:hover::before{
+    width:300px;
+    height: 300px;
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+
+/*here we used new tags 
+things to keep in mind from this practical:
+1.how to centre the elements
+2.how the relative(position) works
+3.how we used before hover state
+4. what the top left and transform tags do*/

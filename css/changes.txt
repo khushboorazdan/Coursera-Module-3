@@ -1,0 +1,4 @@
+1.Make the button have some mesh coloring like the instagram logo
+ 
+2.Make a flex card view with a image such that after hover the image 
+goes and there is information present with a link know more.
