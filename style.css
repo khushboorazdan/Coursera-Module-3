@@ -29,6 +29,7 @@ body{
 .input::placeholder{
     color: lightgray;
     font-family: sans-serif;
+    font-size: 14px;
 }
 .btn{
     background-color: green;
